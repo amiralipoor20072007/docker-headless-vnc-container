@@ -2,6 +2,9 @@
 
 FROM debian:11
 
+RUN apt update && sudo apt upgrade -y
+RUN apt install p7zip-full -y
+
 MAINTAINER Sven Nierlein "sven@consol.de"
 ENV REFRESHED_AT 2022-10-13
 
